@@ -14,9 +14,9 @@ export const business = {
 
   // SOURCE-PROVIDED from the scanned menu header. Confirm which is primary
   // vs. secondary, and which should be used for WhatsApp, before launch.
-  phone: "9415456822",
+  phone: "9506814862",
   phoneSecondary: "9506814862",
-  whatsapp: "9415456822",
+  whatsapp: "9506814862",
 
   email: "REPLACE_WITH_EMAIL",
 

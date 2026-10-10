@@ -26,7 +26,7 @@ export const stallMenuItems: MenuItem[] = [
   { id: "st-cht-03", name: "Pani Batasha — 2 Types", category: "chaat", subcategory: "Live Counter", sourcePage: 7, vegetarian: true, featured: true },
   { id: "st-cht-04", name: "Dahi Papdi", category: "chaat", subcategory: "Live Counter", sourcePage: 7, vegetarian: true },
   { id: "st-cht-05", name: "Paneer Angda", sourceName: "Paneer Angda", category: "chaat", subcategory: "Live Counter", sourcePage: 7, vegetarian: true, needsClientConfirmation: true },
-  { id: "st-cht-06", name: "Munglet", category: "chaat", subcategory: "Live Counter", sourcePage: 7 },
+  { id: "st-cht-06", name: "Munglet", category: "chaat", subcategory: "Live Counter", sourcePage: 7, vegetarian: true },
   { id: "st-cht-07", name: "Paneer Dal Cheela", category: "chaat", subcategory: "Live Counter", sourcePage: 7, vegetarian: true },
   { id: "st-cht-08", name: "Vatter Dosa", sourceName: "Vatter Dosa", category: "chaat", subcategory: "Live Counter", sourcePage: 7, vegetarian: true, needsClientConfirmation: true },
   { id: "st-cht-09", name: "Pav Bhaji", category: "chaat", subcategory: "Live Counter", sourcePage: 7, vegetarian: true, featured: true },

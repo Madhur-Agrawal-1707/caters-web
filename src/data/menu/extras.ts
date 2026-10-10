@@ -24,6 +24,6 @@ export const extraMenuItems: MenuItem[] = [
   { id: "ex-ab-03", name: "Sandwich", category: "breakfast", subcategory: "Additional Breakfast", sourcePage: 9, vegetarian: true },
   { id: "ex-ab-04", name: "Aloo Parathe Gobi", category: "breakfast", subcategory: "Additional Breakfast", sourcePage: 9, vegetarian: true },
   { id: "ex-ab-05", name: "Mix Bhajiya", sourceName: "Mix Bhajiya / 4 Types Ke Pakode + Chutney", category: "breakfast", subcategory: "Additional Breakfast", sourcePage: 9, vegetarian: true },
-  { id: "ex-ab-06", name: "Chai", category: "breakfast", subcategory: "Additional Breakfast", sourcePage: 9 },
-  { id: "ex-ab-07", name: "Coffee", category: "breakfast", subcategory: "Additional Breakfast", sourcePage: 9 },
+  { id: "ex-ab-06", name: "Chai", category: "breakfast", subcategory: "Additional Breakfast", sourcePage: 9, vegetarian: true },
+  { id: "ex-ab-07", name: "Coffee", category: "breakfast", subcategory: "Additional Breakfast", sourcePage: 9, vegetarian: true },
 ];

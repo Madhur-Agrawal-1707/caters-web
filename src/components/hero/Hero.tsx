@@ -108,7 +108,7 @@ export default function Hero() {
             >
               <div className="w-16 h-16 rounded-full overflow-hidden relative border-2 border-white shadow-sm">
                 <Image 
-                  src="https://images.unsplash.com/photo-1589302168068-964664d93cb0?q=80&w=1000&auto=format&fit=crop"
+                  src="/images/food/biryani.jpg"
                   alt="Biryani"
                   fill
                   className="object-cover"

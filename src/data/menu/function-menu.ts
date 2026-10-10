@@ -26,10 +26,10 @@ export const functionMenuItems: MenuItem[] = [
   { id: "fm-l-10", name: "Gulab Jamun", category: "lunch", subcategory: "Menu De Function", sourcePage: 3, vegetarian: true, featured: true },
 
   // PAGE 3 — HIGH TEA (per person)
-  { id: "fm-h-01", name: "Chai", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3 },
-  { id: "fm-h-02", name: "Coffee", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3 },
-  { id: "fm-h-03", name: "Biscuit", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3 },
-  { id: "fm-h-04", name: "Cookies", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3 },
+  { id: "fm-h-01", name: "Chai", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3, vegetarian: true },
+  { id: "fm-h-02", name: "Coffee", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3, vegetarian: true },
+  { id: "fm-h-03", name: "Biscuit", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3, vegetarian: true },
+  { id: "fm-h-04", name: "Cookies", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3, vegetarian: true },
   { id: "fm-h-05", name: "Mini Samosa", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3, vegetarian: true },
   { id: "fm-h-06", name: "Patties", category: "high-tea", subcategory: "Menu De Function", sourcePage: 3, vegetarian: true },
 

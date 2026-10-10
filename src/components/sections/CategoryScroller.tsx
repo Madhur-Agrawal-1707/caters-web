@@ -7,11 +7,11 @@ import Container from "@/components/ui/Container";
 
 const categories = [
   { name: "Wedding", image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=300&auto=format&fit=crop", href: "/catering#weddings" },
-  { name: "Birthday", image: "https://images.unsplash.com/photo-1530103862676-de8892bc952f?q=80&w=300&auto=format&fit=crop", href: "/events#birthday" },
+  { name: "Birthday", image: "/images/events/birthday.jpg", href: "/events#birthday" },
   { name: "Corporate", image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=300&auto=format&fit=crop", href: "/catering#corporate" },
-  { name: "House Party", image: "https://images.unsplash.com/photo-1516997184284-fd33f7cc203c?q=80&w=300&auto=format&fit=crop", href: "/events#house-party" },
-  { name: "Engagement", image: "https://images.unsplash.com/photo-1606214088924-d2c6762c2f6d?q=80&w=300&auto=format&fit=crop", href: "/events#engagement" },
-  { name: "Festivals", image: "https://images.unsplash.com/photo-1605338165564-96d55734e5a9?q=80&w=300&auto=format&fit=crop", href: "/events#festivals" },
+  { name: "House Party", image: "/images/events/house-party.jpg", href: "/events#house-party" },
+  { name: "Engagement", image: "/images/events/engagement.jpg", href: "/events#engagement" },
+  { name: "Festivals", image: "/images/events/festival.jpg", href: "/events#festivals" },
 ];
 
 export default function CategoryScroller() {

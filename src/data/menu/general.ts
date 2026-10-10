@@ -5,19 +5,19 @@ import type { MenuItem } from "@/types";
 
 export const generalMenuItems: MenuItem[] = [
   // PAGE 1 — BREAKFAST
-  { id: "gm-b-01", name: "Chai", category: "breakfast", subcategory: "General Menu", sourcePage: 1 },
-  { id: "gm-b-02", name: "Coffee", category: "breakfast", subcategory: "General Menu", sourcePage: 1 },
-  { id: "gm-b-03", name: "Biscuit", category: "breakfast", subcategory: "General Menu", sourcePage: 1 },
-  { id: "gm-b-04", name: "Cookies", category: "breakfast", subcategory: "General Menu", sourcePage: 1 },
+  { id: "gm-b-01", name: "Chai", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
+  { id: "gm-b-02", name: "Coffee", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
+  { id: "gm-b-03", name: "Biscuit", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
+  { id: "gm-b-04", name: "Cookies", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
   { id: "gm-b-05", name: "Upma", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
   { id: "gm-b-06", name: "Bread Makhan Jam", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
   { id: "gm-b-07", name: "Dhokla", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
-  { id: "gm-b-08", name: "Sandwich", category: "breakfast", subcategory: "General Menu", sourcePage: 1 },
+  { id: "gm-b-08", name: "Sandwich", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
   { id: "gm-b-09", name: "Dahi Jalebi", category: "breakfast", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
 
   // PAGE 1 — LUNCH
   { id: "gm-l-01", name: "Dal Bati", category: "lunch", subcategory: "General Menu", sourcePage: 1, vegetarian: true, featured: true },
-  { id: "gm-l-02", name: "Tikkad", sourceName: "Tikkad / Tikad", category: "lunch", subcategory: "General Menu", sourcePage: 1, needsClientConfirmation: true },
+  { id: "gm-l-02", name: "Tikkad", sourceName: "Tikkad / Tikad", category: "lunch", subcategory: "General Menu", sourcePage: 1, vegetarian: true, needsClientConfirmation: true },
   { id: "gm-l-03", name: "Churma", category: "lunch", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
   { id: "gm-l-04", name: "Aloo Matar", category: "lunch", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
   { id: "gm-l-05", name: "Gatte Ki Sabzi", category: "lunch", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
@@ -29,10 +29,10 @@ export const generalMenuItems: MenuItem[] = [
   { id: "gm-l-11", name: "Chapati", category: "lunch", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
 
   // PAGE 1 — HIGH TEA
-  { id: "gm-h-01", name: "Chai", category: "high-tea", subcategory: "General Menu", sourcePage: 1 },
-  { id: "gm-h-02", name: "Coffee", category: "high-tea", subcategory: "General Menu", sourcePage: 1 },
-  { id: "gm-h-03", name: "Biscuit", category: "high-tea", subcategory: "General Menu", sourcePage: 1 },
-  { id: "gm-h-04", name: "Cookies", category: "high-tea", subcategory: "General Menu", sourcePage: 1 },
+  { id: "gm-h-01", name: "Chai", category: "high-tea", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
+  { id: "gm-h-02", name: "Coffee", category: "high-tea", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
+  { id: "gm-h-03", name: "Biscuit", category: "high-tea", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
+  { id: "gm-h-04", name: "Cookies", category: "high-tea", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
   { id: "gm-h-05", name: "Aloo Bada + Chutney", category: "high-tea", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
   { id: "gm-h-06", name: "Paneer Pakoda and Veg Pakoda", category: "high-tea", subcategory: "General Menu", sourcePage: 1, vegetarian: true },
 

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useMenuSelection } from "@/components/menu/MenuSelectionContext";
 import { allMenuItems } from "@/data/menu";
-import { submitInquiry } from "@/lib/inquiries";
+
 import { buildInquiryWhatsAppMessage, buildWhatsAppUrl } from "@/lib/whatsapp";
 import type { EventType, QuoteInquiry } from "@/types";
 import QuoteStepIndicator from "./QuoteStepIndicator";
@@ -75,7 +75,7 @@ export default function QuoteForm() {
   const [step, setStep] = useState(0);
   const [form, setForm] = useState<FormState>(emptyState);
   const [errors, setErrors] = useState<Errors>({});
-  const [submitting, setSubmitting] = useState(false);
+
   const [result, setResult] = useState<{ success: boolean; message: string } | null>(null);
 
   const selectedItems = allMenuItems.filter((item) => selectedIds.includes(item.id));
@@ -96,8 +96,7 @@ export default function QuoteForm() {
     setStep((s) => Math.max(s - 1, 0));
   }
 
-  async function handleSubmit() {
-    setSubmitting(true);
+  function handleSubmit() {
     const inquiry: QuoteInquiry = {
       contact: { name: form.name, phone: form.phone, email: form.email || undefined },
       event: {
@@ -112,40 +111,20 @@ export default function QuoteForm() {
         additionalRequirements: form.additionalRequirements || undefined,
       },
     };
-    const res = await submitInquiry(inquiry);
-    setResult(res);
-    setSubmitting(false);
+    const message = buildInquiryWhatsAppMessage(inquiry);
+    const url = buildWhatsAppUrl(message);
+    window.open(url, "_blank", "noopener,noreferrer");
+    setResult({ success: true, message: "Redirected to WhatsApp." });
   }
 
   if (result?.success) {
-    const inquiry: QuoteInquiry = {
-      contact: { name: form.name, phone: form.phone, email: form.email || undefined },
-      event: {
-        eventType: form.eventType,
-        eventDate: form.eventDate,
-        city: form.city,
-        venue: form.venue || undefined,
-        guests: form.guests,
-      },
-      requirements: {
-        selectedMenuItemIds: selectedIds,
-        additionalRequirements: form.additionalRequirements || undefined,
-      },
-    };
     return (
       <div className="border border-[var(--color-line)] px-6 py-14 text-center sm:px-14">
         <CheckCircle2 className="mx-auto size-10 text-[var(--color-maroon)]" strokeWidth={1.25} />
         <h2 className="font-display mt-5 text-2xl font-medium sm:text-3xl">Thank you.</h2>
         <p className="mt-2 text-[var(--color-ink)]/70">
-          Your event details have been received.
+          Your event details have been sent via WhatsApp. Our team will get back to you shortly.
         </p>
-        <Button
-          href={buildWhatsAppUrl(buildInquiryWhatsAppMessage(inquiry))}
-          className="mt-8"
-          showArrow
-        >
-          Continue on WhatsApp
-        </Button>
       </div>
     );
   }
@@ -359,8 +338,8 @@ export default function QuoteForm() {
             Continue
           </Button>
         ) : (
-          <Button onClick={handleSubmit} type="button" disabled={submitting}>
-            {submitting ? "Submitting…" : "Request a Quote"}
+          <Button onClick={handleSubmit} type="button">
+            Send via WhatsApp
           </Button>
         )}
       </div>

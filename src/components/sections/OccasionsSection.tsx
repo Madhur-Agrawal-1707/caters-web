@@ -8,8 +8,8 @@ import Container from "@/components/ui/Container";
 const occasions = [
   { name: "Wedding", description: "Grand feasts for your special day.", image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600&auto=format&fit=crop", href: "/events#weddings", colSpan: 2 },
   { name: "Corporate", description: "Professional catering for business events.", image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600&auto=format&fit=crop", href: "/events#corporate", colSpan: 1 },
-  { name: "House Party", description: "Intimate gatherings with great food.", image: "https://images.unsplash.com/photo-1516997184284-fd33f7cc203c?q=80&w=600&auto=format&fit=crop", href: "/events#house-party", colSpan: 1 },
-  { name: "Birthday", description: "Joyful menus for all ages.", image: "https://images.unsplash.com/photo-1530103862676-de8892bc952f?q=80&w=600&auto=format&fit=crop", href: "/events#birthday", colSpan: 2 },
+  { name: "House Party", description: "Intimate gatherings with great food.", image: "/images/events/house-party.jpg", href: "/events#house-party", colSpan: 1 },
+  { name: "Birthday", description: "Joyful menus for all ages.", image: "/images/events/birthday.jpg", href: "/events#birthday", colSpan: 2 },
 ];
 
 export default function OccasionsSection() {
