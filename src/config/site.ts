@@ -4,16 +4,16 @@
 
 export const siteConfig = {
   seo: {
-    titleTemplate: "%s | PS Caterers",
-    defaultTitle: "PS Caterers — Premium Catering for Weddings & Celebrations",
+    titleTemplate: "%s | RS Caterers",
+    defaultTitle: "RS Caterers — Premium Catering for Weddings & Celebrations",
     description:
-      "PS Caterers designs and executes menus for weddings, family functions, religious ceremonies, corporate events and large celebrations, led by proprietor Ram Sewak Krishna.",
+      "RS Caterers designs and executes menus for weddings, family functions, religious ceremonies, corporate events and large celebrations, led by proprietor Ram Sewak Krishna.",
     url: "https://www.pscaterers.example",
     ogImage: "/images/brand/og-image.jpg",
   },
 
   hero: {
-    eyebrow: "PS Caterers",
+    eyebrow: "RS Caterers",
     headline: ["Exceptional Catering.", "Crafted for Celebrations."],
     description:
       "Thoughtfully crafted catering for weddings, celebrations, corporate gatherings and memorable occasions.",
@@ -22,7 +22,7 @@ export const siteConfig = {
   },
 
   trust: {
-    eyebrow: "About PS Caterers",
+    eyebrow: "About RS Caterers",
     heading: "A Name Trusted Around the Table",
     body: "Every event we cater is treated as a singular occasion — the menu, the presentation and the service are shaped around it. Our team brings the same attention to a family gathering as to a large wedding, because hospitality shows in the details rather than the headline.",
   },

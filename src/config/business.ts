@@ -3,7 +3,7 @@
 // Everything else must be confirmed by the client before production launch.
 
 export const business = {
-  name: "PS Caterers",
+  name: "RS Caterers",
   proprietor: "Ram Sewak Krishna",
   tagline: "",
 

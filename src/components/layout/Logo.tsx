@@ -9,7 +9,7 @@ export default function Logo() {
       aria-label={`${business.name} — home`}
     >
       <span className="font-display text-2xl font-bold tracking-tight text-primary-txt">
-        PS
+        RS
       </span>
       <span className="font-sans text-[0.65rem] tracking-[0.2em] font-bold text-[var(--color-primary)] uppercase mt-0.5">
         Caterers
